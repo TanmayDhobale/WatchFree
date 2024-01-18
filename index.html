@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <link rel="shortcut icon" href="icons/icon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4285f4" />
+  <meta name="robots" content="index, follow">
+  <meta property="og:image" content="https://netflix-1uh.pages.dev/og.jpg"/>
+  <meta name="description"
+    content="Discover and stream your favorite movies and TV shows with NETFLIX KE PITAJI - an open source content search and watch website. Enjoy unlimited access to a vast library of content for free.">
+  <title>free Movie</title>
+  <link rel="preload stylesheet" href="style.min.css" as="style">
+  <link rel="preload stylesheet" href="center-atom.min.css" as="style">
+  <!-- Google tag (gtag.js) -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-THTQ9GZQ0J">
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-THTQ9GZQ0J');
+  </script>
+<!-- Serviceworker code for PWA  -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js').then(function(registration) {
+          console.log('Service worker registered: ', registration.scope);
+        }).catch(function(error) {
+          console.log('Service worker registration failed: ', error);
+        });
+      });
+    }
+  </script>
+  <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=64c60eb01734a80012bd61d3&product=video-share-buttons&source=platform" async="async"></script>
+</head>
+
+<body>
+  <div class="search-container" >
+    <input type="search" id="search-input" placeholder="Search any Movie/Webseries/Anime">
+    <button id="search-button">Search</button>
+  </div>
+  <center>
+    <div id="video" class="video">
+      <iframe id="iframe" scrolling="no" src="" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <p style="color: rgb(79, 221, 221); font-weight: 500;">In case of any Error or Too Much Buffering click again on
+        your Movie poster down below or just change the Player from the right corner in video player. </p>
+      <!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
+      <div id="webSeriesData"></div>
+    </div>
+  </center>
+  <div id="results"></div>
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+  <center style="margin-top: 2vh;">
+    <div class="footer">
+      <div class="inside-footer">
+          <div class="footer-container">
+              <div class="logopart">
+                  <h1></h1>
+                  <img src="images/logo/e.png" alt="">
+              </div>
+              <div class="copyright">
+                  <h6 style="color: white; font-size: 15px;">copyright &copy <span>Tanmay</span>, All Rights Reserved-2023.</h6>
+              </div>
+              <div class="socials">
+                  <a aria-label="My Instagram Profile" target="_blank" href="https://www.instagram.com/tanmay4l/">
+                      <i class="fab fa-instagram"></i>
+                  </a>
+                  
+                  <a aria-label="My GitHub Profile" target="_blank" href="https://github.com/TanmayDhobale">
+                      <i class="fab fa-github"></i>
+                  </a>
+              </div>
+              
+              <div class="btn4">
+                <a href="#" id="subscribeLink"> WANT TO SEY THANKS CLICK ME </a>
+              </div>
+            
+              <script type="module">
+                // Your existing script and imports
+            
+                // Add this event listener
+                document.getElementById('subscribeLink').addEventListener('click', function() {
+                  alert(' GO DRINK WATER !');
+                });
+              </script>
+          </div>
+      </div>
+    </div>
+    <div class="alwaysVisibleContent">
+      <h3>Libraries Used</h3>
+      <div class="footerLinks">
+        <a href="https://embed.smashystream.com/" target="_blank">Smashy Stream</a>
+        <a href="https://codebyzach.github.io/pace/" target="_blank">PACE</a>
+        <a href="https://tmdb.com" target="_blank">TMDB</a>
+        <a href="https://imdb.com" target="_blank">IMDB</a>
+      </div>
+    </div>
+    <!---Footer-->
+
+
+<!------>
+
+
+  </center>
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+  <script src="script.min.js"></script>
+</body>
+</html>
